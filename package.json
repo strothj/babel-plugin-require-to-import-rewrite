@@ -1,0 +1,31 @@
+{
+  "name": "babel-plugin-require-to-import-rewrite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "pnpify tsc --watch",
+    "build": "pnpify tsc",
+    "clean": "rimraf dist",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/types": "^7.6.1",
+    "@types/babel__core": "^7.1.3",
+    "@types/node": "^12.7.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/jest": "^24.0.18",
+    "@yarnpkg/pnpify": "^2.0.0-rc.3",
+    "eslint": "^6.3.0",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.2"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.6.0"
+  }
+}
