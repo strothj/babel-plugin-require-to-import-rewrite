@@ -1565,6 +1565,7 @@ __metadata:
     "@types/jest": "npm:^24.0.18"
     "@types/node": "npm:^12.7.4"
     "@yarnpkg/pnpify": "npm:^2.0.0-rc.3"
+    babel-plugin-tester: "npm:^7.0.1"
     eslint: "npm:^6.3.0"
     jest: "npm:^24.9.0"
     rimraf: "npm:^3.0.0"
@@ -1573,6 +1574,21 @@ __metadata:
     "@babel/core": ^7.6.0
   languageName: unknown
   linkType: soft
+
+"babel-plugin-tester@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "babel-plugin-tester@npm:7.0.1"
+  dependencies:
+    common-tags: "npm:^1.4.0"
+    invariant: "npm:^2.2.2"
+    lodash.mergewith: "npm:^4.6.0"
+    path-exists: "npm:^4.0.0"
+    strip-indent: "npm:^3.0.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: 23c1956b8ab75b906c232aa278edeb901e9550263e7e7557304b2f6c727e470da713ddb6d6dd7d501ff859bed8493977e347b3ddb513f3a93dbca15d09754760
+  languageName: node
+  linkType: hard
 
 "babel-preset-jest@npm:^24.9.0":
   version: 24.9.0
@@ -1868,6 +1884,13 @@ __metadata:
   version: 2.20.0
   resolution: "commander@npm:2.20.0"
   checksum: 4904efd99bd5abd669c7679cbb9bcf1d9e28b1a9a6a89d7b11565f5e4d5175864ca79edc73c3509a32bcad23b3e484e41f1707007dec3e303dc1b2cf9f4997bf
+  languageName: node
+  linkType: hard
+
+"common-tags@npm:^1.4.0":
+  version: 1.8.0
+  resolution: "common-tags@npm:1.8.0"
+  checksum: 7f8c6ed94ac1121a5aa2b9de9cc8561d0041dc119ea733eca5b1ae5528908528d21807586dcba8e4bc94e9a346d981866aa6ea63eb746d6dc03911c64b083282
   languageName: node
   linkType: hard
 
@@ -3936,6 +3959,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.mergewith@npm:^4.6.0":
+  version: 4.6.2
+  resolution: "lodash.mergewith@npm:4.6.2"
+  checksum: 642acd7f1b5a62376e4a75c15db7edfdf6328e75024b0c90fd68dce87db9817122ae9961b4d9dd15d49dfc7984372dfe0982ee7ac95d0cacb582288b7069cc9d
+  languageName: node
+  linkType: hard
+
 "lodash.sortby@npm:^4.7.0":
   version: 4.7.0
   resolution: "lodash.sortby@npm:4.7.0"
@@ -4044,6 +4074,13 @@ __metadata:
   version: 1.2.0
   resolution: "mimic-fn@npm:1.2.0"
   checksum: 77b4f6cb17167f738ffe281b1ef12697a98ff430318648f2626ffadc90dfda7aa8ccc9b4c58899cdb360f6252afbb5c66c371555a07c89c3c7630647242de9b7
+  languageName: node
+  linkType: hard
+
+"min-indent@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "min-indent@npm:1.0.0"
+  checksum: a59a18107a0e981a2b2485b84b72e4bd7d4f112a9425631cdbafa7baf14f4306cf4140a64970e80de206d6e12c4d3e1a0b21c3b13b97bd284ed92621604a3cc2
   languageName: node
   linkType: hard
 
@@ -4596,6 +4633,13 @@ __metadata:
   version: 3.0.0
   resolution: "path-exists@npm:3.0.0"
   checksum: 285615f4b3349ee4b4b8a943a43826256d3b20513bfcfe51c97155ee4aee02662a550e8bc8713dcf994bd093cd12288560a90f86cf10ded0ac39b6906dade793
+  languageName: node
+  linkType: hard
+
+"path-exists@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "path-exists@npm:4.0.0"
+  checksum: d9b165486d4d90887eab9f46c904d48c7fde33acb936f84167d806bc37808aa190487005c9ca40ae3719a1f114a9f48abe0aed3256fd6a7849df299859adbc78
   languageName: node
   linkType: hard
 
@@ -5561,6 +5605,15 @@ __metadata:
   version: 1.0.0
   resolution: "strip-eof@npm:1.0.0"
   checksum: fd3f003c69be82796565ac7f60c4eceec562a31bc2a780e0cd1eedff9942ed802fe4b20150dc7ecb8a06341b1a0e0f44c558050eaff296bcdcc2dab204a744a4
+  languageName: node
+  linkType: hard
+
+"strip-indent@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "strip-indent@npm:3.0.0"
+  dependencies:
+    min-indent: "npm:^1.0.0"
+  checksum: 71ea185a1a78c34cc2ada9f50668bc3880d14e40d83a169918c85043fd41cfd34c929e86808e842592f66b41ac2f519dc2db059be4ec2d0ee2bf0a2c00f4e437
   languageName: node
   linkType: hard
 

@@ -2,3 +2,4 @@
 /.yarn/unplugged
 /dist
 /.pnp.js
+.DS_Store

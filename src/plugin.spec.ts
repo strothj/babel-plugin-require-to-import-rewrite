@@ -1,14 +1,16 @@
-import { types } from "@babel/core";
+/// <reference path="./typings/babel-plugin-tester.d.ts" />
+import nodePath from "path";
+import pluginTester from "babel-plugin-tester";
+import { plugin } from "./plugin";
 
-interface Test {
-  thing: string;
-}
+const fixturesDirectory = nodePath.join(__dirname, "./__fixtures__");
 
-it("does something", () => {
-  const test: Test = {
-    thing: "1"
-  };
-
-  console.log(test);
-  console.log(types.anyTypeAnnotation);
+pluginTester({
+  plugin,
+  babelOptions: {
+    // This needs to be set to properly ignore the root "babel.config.js".
+    root: fixturesDirectory
+  },
+  fixtures: fixturesDirectory,
+  snapshot: true
 });
