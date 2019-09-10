@@ -1,7 +1,7 @@
 {
-  "name": "babel-plugin-require-to-import-rewrite",
+  "name": "@strothj/babel-plugin-require-to-import-rewrite",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "start": "pnpify tsc --watch",
