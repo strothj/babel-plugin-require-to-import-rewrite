@@ -1,5 +1,8 @@
 function someUtil() {}
 
+const something = 123;
+
 module.exports = {
-  someUtil
+  someUtil,
+  somethingElse: something
 };
