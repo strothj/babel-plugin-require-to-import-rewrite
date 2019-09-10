@@ -1,3 +1,3 @@
 function someUtil() {}
 
-module.exports = someUtil;
+export default someUtil;

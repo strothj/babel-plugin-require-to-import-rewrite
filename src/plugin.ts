@@ -3,6 +3,7 @@ import { FilenameVisitorState } from "./FilenameVisitorState";
 import { requireRewriteVisitor } from "./requireRewriteVisitor";
 import { exportUnrollVisitor } from "./exportUnrollVisitor";
 import { exportObjectVisitor } from "./exportObjectVisitor";
+import { exportIdentifierVisitor } from "./exportIdentifierVisitor";
 
 export function plugin(): PluginObj<FilenameVisitorState> {
   return {
@@ -35,6 +36,11 @@ const exportVisitor: Visitor<unknown> = {
 
     if (assignmentExpression.get("right").isObjectExpression()) {
       path.traverse(exportObjectVisitor);
+      return;
+    }
+
+    if (assignmentExpression.get("right").isIdentifier()) {
+      path.traverse(exportIdentifierVisitor);
       return;
     }
   }
