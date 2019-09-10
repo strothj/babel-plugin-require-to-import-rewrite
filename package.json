@@ -1,8 +1,12 @@
 {
-  "name": "@strothj/babel-plugin-require-to-import-rewrite",
-  "version": "1.0.0",
+  "name": "babel-plugin-require-to-import-rewrite",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "license": "MIT",
+  "description": "Basic Babel plugin which transforms requires into imports.",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "start": "pnpify tsc --watch",
     "build": "pnpify tsc",
@@ -11,6 +15,9 @@
   },
   "dependencies": {
     "@babel/types": "^7.6.1"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -25,8 +32,5 @@
     "jest": "^24.9.0",
     "rimraf": "^3.0.0",
     "typescript": "^3.6.2"
-  },
-  "peerDependencies": {
-    "@babel/core": "^7.6.0"
   }
 }
